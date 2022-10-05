@@ -1,0 +1,41 @@
+{
+  "name": "LOL I Fixed UG UI 🖕 ",
+  "version": "1.0",
+  "options_page": "settings.html",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "UG_ს ბანძი UI",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/favicon16.png",
+    "32": "icons/favicon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/favicon16.png",
+    "32": "icons/favicon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "description": "ქრომის ანიმეების ექსტენზია, რომელიც რენდომად აგენერირებს ანიმეებს ",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://my.ug.edu.ge/*"
+        
+      ],
+      "html": ["display.html"],
+      "js": ["script.js"],
+      "css": ["mystyle.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
