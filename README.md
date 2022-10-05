@@ -11,4 +11,4 @@
 ან  გადადით ლინკზე chrome://extensions/
 
 * ჩართეთ developer mode<br>
-* ჩააგდეთ ფოლდერი Gojo_satori
+* ჩააგდეთ ფოლდერი UG_SUCKS და enjoy
