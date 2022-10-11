@@ -77,9 +77,15 @@ window.addEventListener("load", (event) => {
       msgs.forEach(function (msg) {
         var sender = msg.querySelector(".sender").textContent;
         if (!senders.includes(sender)) {
-          msg.style.display = "none";
+          msg.remove()
         }
       });
+
+      document.querySelector(".conversation__start-inner button img").setAttribute("src","https://drive.google.com/uc?export=view&id=1O13dax4VnwzhVQMQdMgnnFV0eWeVV8ZY")
+      document.querySelector(".btn-round-attachment img").setAttribute("src","https://drive.google.com/uc?export=view&id=1Jre49HSZf8v-U6FzFYwUfeRIW235N0AG")
+
+      
+
     }
   }
 });
