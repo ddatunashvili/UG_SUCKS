@@ -1,8 +1,6 @@
 document.querySelector("html").style.opacity = "0";
 
 function show() {
-    window.addEventListener("load", (event) => {
-        document.querySelector("html").style.opacity = "1";
         document.querySelectorAll("img.img-fluid").forEach(function (el) {
             el.setAttribute("src", "https://drive.google.com/uc?export=view&id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu");
         });
@@ -11,7 +9,13 @@ function show() {
         if (url == "https://my.ug.edu.ge/") {
             document.querySelector("main").innerHTML = `<iframe style="width:100%;height:800px" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&amp;controls=0&autoplay=1&mute=1&showinfo=0&modestbranding=0" title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay=True; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> `;
         }
-
+        try{
+            document.querySelectorAll(".d-none").forEach((el)=>{      
+                el.classList.add("d-block")
+            
+        }) 
+        }catch{console.log("none");}
+        
         document.querySelector("nav").innerHTML = `<nav data-v-31e7222c="" class="navbar navbar-expand-md navbar__lg  fixed-top "><div data-v-31e7222c="" class="sm-w-100 d-flex order-1 order-md-2"><button data-v-31e7222c="" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"><span data-v-31e7222c="" class="navbar-toggler-icon"></span></button> </div> <div data-v-31e7222c="" id="navbarSupportedContent" class="collapse navbar-collapse order-2 order-md-1 navbarSupportedContent"><ul data-v-31e7222c="" class="navbar-nav"><li data-v-31e7222c="" class="nav-item ">
 <a data-v-31e7222c="" href="/schedule" class="nav-link text-nowrap" id="navbarDropdown_lg-0" role="button" aria-haspopup="true" aria-expanded="false"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">ცხრილი</a> </li><li data-v-31e7222c="" class="nav-item ">
 <a data-v-31e7222c="" href="/online-books" class="nav-link text-nowrap" id="navbarDropdown_lg-0" role="button" aria-haspopup="true" aria-expanded="false"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">წიგნები</a> </li><li data-v-31e7222c="" class="nav-item">
@@ -41,7 +45,6 @@ function show() {
   
   
   <a style="background:red !important;"href="/logout" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">გამოსვლა</a></li></div>`;
-
         // სახელები
         var senders = [
             "საზოგადოებასთან ურთიერთობისა და მარკეტინგის სამსახური",
@@ -59,7 +62,6 @@ function show() {
         // ფუნქცია იწყება 100 მილიწამში
         function main() {
             clearTimeout(timer);
-            document.querySelector("html").style.opacity = "1";
             document.querySelector(".message-search-area").remove();
             document.querySelector(".conversation-note").remove();
 
@@ -79,7 +81,13 @@ function show() {
                 document.querySelector(".btn-round-attachment img").setAttribute("src", "https://drive.google.com/uc?export=view&id=1Jre49HSZf8v-U6FzFYwUfeRIW235N0AG");
             }
         }
-    });
 }
+window.addEventListener("load", (event) => {
+    try{
+        show();
+    }catch{}
+    
+    document.querySelector("html").style.opacity = "1";
+});
 
-show();
+// nav.navbar.d-flex.align-items-center.navbar__sm.fixed-top.d-block.d-sm-none

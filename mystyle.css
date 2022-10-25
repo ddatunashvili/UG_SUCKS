@@ -22,15 +22,24 @@ a:hover {
 aside.col-12.col-sm-3.col-md-2.col-lg-2.position-fixed.sd-bg.px-sm-0.px-md-0.px-lg-1.px-xl-3.d-none.d-sm-block {
   position: fixed !important;
   left: -300px;
-  width: 355px !important;
+  max-width: 355px !important;
   border: none !important;
   border-radius: 20px !important;
-  height: 550px !important;
+  max-height: 600px !important;
   transition: 0.4s !important;
-  top: 30% !important;
+  top: 200px !important;
 
   background: #460144 !important;
   z-index: 9999999999999999 !important;
+}
+input#attachment{
+  opacity: 0 !important;
+}
+iframe {
+  
+  display: block !important;
+  margin: auto !important;
+  margin-top: -50px !important;
 }
 
 .sd-bg::before {
@@ -43,18 +52,26 @@ aside.col-12.col-sm-3.col-md-2.col-lg-2.position-fixed.sd-bg.px-sm-0.px-md-0.px-
 
   color: white !important;
 }
+div#navbarSupportedContent {
+  display: flex  !important;
+  justify-content: center !important;
+}
 nav {
+  display: flex;
+  justify-content: center !important;
   margin: auto !important;
   cursor: pointer !important;
   position: fixed !important;
-  top: -90px !important;
-  width: fit-content !important;
+  top: -80px !important;
+  max-height: 120px !important;
+  width: 1000px !important;
+  min-width: 700px !important;
   background: #460144 !important;
   color: white;
   border-radius: 10px !important;
 }
 
-nav:hover {
+nav:hover,.d-block.d-lg-block nav:hover {
   top: 0 !important;
   background: #03024e !important;
   box-shadow: 5px 5px 10px #6e006e !important;
@@ -76,7 +93,7 @@ nav:hover {
 }
 img[alt='profile-image'] {
   cursor: pointer;
-  width: min-content;
+  max-width: 260px !important;
 }
 
 a#conversations {
@@ -233,3 +250,49 @@ main {
     display: none !important;
 }
 
+/* disable english lang table */
+.schedule .table tbody tr:nth-of-type(3) {
+  display: none !important;
+}
+
+@media only  screen and (max-width:1000px) {
+  
+  aside.col-12.col-sm-3.col-md-2.col-lg-2.position-fixed.sd-bg.px-sm-0.px-md-0.px-lg-1.px-xl-3.d-none.d-sm-block {
+    max-height: none;
+    max-height:350px !important;
+    max-width: 200px !important;
+    left: -180px !important;
+  }
+  
+
+  img[alt='profile-image'] {
+    cursor: pointer;
+    max-width: 150px !important;
+  }
+  a#conversations{
+    width: 70px !important;
+  }
+  aside.col-12.col-sm-3.col-md-2.col-lg-2.position-fixed.sd-bg.px-sm-0.px-md-0.px-lg-1.px-xl-3.d-none.d-sm-block .nav-item {
+    padding: 4px !important;
+  }
+  .grid-lay {
+    margin: auto !important;
+    padding: 0 !important;
+    width: fit-content !important;
+  }
+  nav{
+    display: none !important;
+  }
+  .d-block.d-lg-block nav{
+    top:-50px !important;
+    display: block !important;
+    width: 700px !important;
+  }
+  iframe {
+    display: block !important;
+    margin: auto !important;
+    width: 700px !important;
+    height: 400px !important;
+  }
+  
+}
