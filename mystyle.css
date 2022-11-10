@@ -162,7 +162,10 @@ main {
   background: none !important;
   color: black !important;
 }
-.message__list {
+.chat .message__list{
+  background-color: black !important;
+}
+.chat-bg:nth-of-type(1){
   border-radius: 20px !important;
   background: black !important;
   border: 1px solid #9c000a !important;
@@ -195,6 +198,7 @@ main {
   transform: none !important;
   overflow: hidden;
 }
+
 
 .chat .msg__item.active .sent-text,
 .chat .msg__item:hover .sent-text {

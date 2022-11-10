@@ -56,15 +56,16 @@ function show() {
             "ბაჯიაშვილი ანასტასია",
             "მარიამ გაგელიძე",
         ];
-
+      
         const timer = setTimeout(main, 1000);
 
         // ფუნქცია იწყება 100 მილიწამში
         function main() {
-            clearTimeout(timer);
-            document.querySelector(".message-search-area").remove();
-            document.querySelector(".conversation-note").remove();
-
+            clearTimeout(timer);  
+            try{        
+                document.querySelector(".message-search-area").remove();
+                document.querySelector(".conversation-note").remove();
+            }catch{return}
             // ფილტრაცია
             var url = window.location.href;
             if (url.includes("conversations")  ) {
@@ -72,7 +73,8 @@ function show() {
                 var msgs = document.querySelectorAll(".msg__item");
                 msgs.forEach(function (msg) {
                     var sender = msg.querySelector(".sender").textContent;
-                    if (! senders.includes(sender)) {
+                    if (!senders.includes(sender)) {
+                        console.log(msg)
                         msg.remove();
                     }
                 });
