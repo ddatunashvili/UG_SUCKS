@@ -198,7 +198,14 @@ main {
   transform: none !important;
   overflow: hidden;
 }
-
+span.sender.yellow-msg {
+  background: black !important;
+  display: block !important;
+  height: fit-content !important;
+  line-height: 24px !important;
+  padding: 4px 10px !important;
+  border-radius: 10px !important;
+}
 
 .chat .msg__item.active .sent-text,
 .chat .msg__item:hover .sent-text {
