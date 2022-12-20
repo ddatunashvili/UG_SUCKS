@@ -55,6 +55,14 @@ function show() {
     <!----></li>
 </ul>
 </div></nav>`;
+try{
+  var message_count = document.querySelector(".badge-danger.badge-pill").innerText
+
+  
+var element = `<span class="ml-1 badge-danger badge-pill">${message_count}</span>`
+}catch{
+  element = ""
+}
 
   document.querySelector(
     "aside"
