@@ -52,11 +52,20 @@ function show() {
 </div></nav>`
 ;
 
+
+    try{
+         var message_count = document.querySelector(".badge-danger.badge-pill").innerText
+
+    var element = `<span class="ml-1 badge-danger badge-pill">${message_count}</span>`
+    }catch{
+        element = ""
+    }
+    
         document.querySelector("aside").innerHTML = `<div class="d-flex justify-content-center"><div class="circle-border "><div class="circle"><a href="/"><img src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="profile-image" class="img-fluid"></a></div></div></div>
  <div class="grid-lay">  
   <li class="nav-item">
  
-<a href="/conversations/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">მესიჯები</a></li>
+<a href="/conversations/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">მესიჯები${element}</a></li>
   <li class="nav-item">
   
   <a href="/profile/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">პროფილი</a></li>

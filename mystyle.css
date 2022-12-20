@@ -76,7 +76,13 @@ nav:hover,.d-block.d-lg-block nav:hover {
   background: #03024e !important;
   box-shadow: 5px 5px 10px #6e006e !important;
 }
-
+.badge-danger.badge-pill {
+  margin-left: 5px !important;
+  width: 18px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
 .grid-lay {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -133,7 +139,14 @@ main {
 .evaluations-section img {
   width: 10px !important;
 }
-
+.conversation__wrapper-inner a {
+  color: white !important;
+  font-weight: bold !important;
+  line-height: 3 !important;
+}
+.conversation__wrapper-inner li {
+  color: #d10d8c !important;
+}
 .conversation__start button ,.conversation__start textarea{
   display: flex !important;
   justify-content: center !important;
