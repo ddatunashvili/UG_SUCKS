@@ -12,4 +12,3 @@
 
 * ჩართეთ developer mode<br>
 * ჩააგდეთ ფოლდერი UG_SUCKS და enjoy
-* ტესტი
