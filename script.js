@@ -140,7 +140,7 @@ var element = `<span class="ml-1 badge-danger badge-pill">${message_count}</span
     } else if (url.includes("schedule")) {
       console.log(1);
       const date = new Date();
-      const [month, day] = [date.getMonth() + 1, date.getDate()];
+      const [month, day, year] = [date.getMonth() + 1, date.getDate(),date.getFullYear()];
 
       var schedule = document.querySelectorAll(".schedule tbody tr");
 
@@ -148,7 +148,8 @@ var element = `<span class="ml-1 badge-danger badge-pill">${message_count}</span
         var date = el.querySelector("td[data-label='თარიღი']").innerText;
         var m = parseInt(date.split("-")[1]);
         var d = parseInt(date.split("-")[2]);
-        if (month > m || day > d) {
+        var y = parseInt(date.split("-")[0]);
+        if (month > m || day > d || year > y) {
           el.style.display = "none";
         }
       });
