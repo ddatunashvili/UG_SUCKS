@@ -95,6 +95,7 @@ var element = `<span class="ml-1 badge-danger badge-pill">${message_count}</span
     "გუგუნავა დიმიტრი",
     "ბაჯიაშვილი ანასტასია",
     "მარიამ გაგელიძე",
+    "თეა ზარიძე"
   ];
   var yellows = ["მედეა ჯანჯღავა"];
   const timer = setTimeout(main, 1000);
