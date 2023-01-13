@@ -55,14 +55,14 @@ function show() {
     <!----></li>
 </ul>
 </div></nav>`;
-try{
-  var message_count = document.querySelector(".badge-danger.badge-pill").innerText
+  try {
+    var message_count = document.querySelector(".badge-danger.badge-pill").innerText
 
-  
-var element = `<span class="ml-1 badge-danger badge-pill">${message_count}</span>`
-}catch{
-  element = ""
-}
+
+    var element = `<span class="ml-1 badge-danger badge-pill">${message_count}</span>`
+  } catch {
+    element = ""
+  }
 
   document.querySelector(
     "aside"
@@ -105,10 +105,18 @@ var element = `<span class="ml-1 badge-danger badge-pill">${message_count}</span
     try {
       document.querySelector(".message-search-area").remove();
       document.querySelector(".conversation-note").remove();
-    } catch {}
+    } catch { }
     // ფილტრაცია
     var url = window.location.href;
     if (url.includes("conversations")) {
+      document.querySelector("span.close-button").addEventListener("click", () => {
+        document.querySelector(".conversation-sm-h").style.display = "none"
+      })
+      document.querySelectorAll(".msg__item-wrapper").forEach((el) => {
+        el.addEventListener("click", () => {
+          document.querySelector(".conversation-sm-h").style.display = "block"
+        })
+      })
       document.querySelector("main").classList.add("convers");
       var msgs = document.querySelectorAll(".msg__item");
       msgs.forEach(function (msg) {
@@ -160,7 +168,7 @@ var element = `<span class="ml-1 badge-danger badge-pill">${message_count}</span
 window.addEventListener("load", (event) => {
   try {
     show();
-  } catch {}
+  } catch { }
 
   document.querySelector("html").style.opacity = "1";
 });
