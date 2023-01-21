@@ -52,9 +52,11 @@ function show() {
 
     <li data-v-31e7222c="" class="nav-item">
         <a data-v-31e7222c="" href="/exam-view/" class="nav-link text-nowrap"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">ნამუშევრები</a>
+    
     <!----></li>
 </ul>
 </div></nav>`;
+// პრეზენტ
 try{
   var message_count = document.querySelector(".badge-danger.badge-pill").innerText
 
@@ -82,6 +84,8 @@ var element = `<span class="ml-1 badge-danger badge-pill">${message_count}</span
   <a href="/pay-online/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">გადახდა</a></li><li  class="nav-item">
 
   <a href="/financial-info/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">ფინანსები</a></li><li  class="nav-item">
+
+  <a href="/presentations/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">ნაშრომები</a></li><li  class="nav-item">
   
   
   <a style="background:red !important;"href="/logout" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">გამოსვლა</a></li></div>`;
