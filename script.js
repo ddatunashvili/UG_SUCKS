@@ -99,9 +99,14 @@ try{
     "გუგუნავა დიმიტრი",
     "ბაჯიაშვილი ანასტასია",
     "მარიამ გაგელიძე",
-    "თეა ზარიძე"
+    "დასაქმების ხელშეწყობის ცენტრი",
+    "სამსახური ფინანსური",
+    "ნათია მანჯიკაშვილი"
   ];
-  var yellows = ["მედეა ჯანჯღავა"];
+  // ბლოკლისტი
+  var blocked = [
+    "მედეა ჯანჯღავა",
+  ];
   const timer = setTimeout(main, 1000);
 
   // ფუნქცია იწყება 100 მილიწამში
@@ -126,11 +131,13 @@ try{
       var msgs = document.querySelectorAll(".msg__item");
       msgs.forEach(function (msg) {
         var sender = msg.querySelector(".sender").textContent;
-        if (yellows.includes(sender)) {
-          msg.remove();
-        }
-        if (!senders.includes(sender) && !yellows.includes(sender)) {
+        // თუ yellow სიას ეკუთვნის  წაშალე
+        if (senders.includes(sender)) {
           msg.querySelector(".sender").classList.add("yellow-msg");
+        }
+        //  თუ არ არის სენდერი და არც yellow არის მაშინ
+        if (blocked.includes(sender)) {
+          msg.remove();
         }
       });
 
