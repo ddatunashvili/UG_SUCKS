@@ -86,7 +86,9 @@ try{
   <a href="/financial-info/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">ფინანსები</a></li><li  class="nav-item">
 
   <a href="/presentations/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">ნაშრომები</a></li><li  class="nav-item">
-  
+
+  <a href="/registration/" style="display:flex !important; justify-content:center !important;color:white !important;background: #679300 !important;"class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">არჩევა</a></li><li  class="nav-item">
+
   
   <a style="background:red !important;"href="/logout" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">გამოსვლა</a></li></div>`;
   // სახელები
