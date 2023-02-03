@@ -65,10 +65,16 @@ try{
   } catch {
     element = ""
   }
+// dog image link
+{/* <img src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="profile-image" class="img-fluid"> */}
 
   document.querySelector(
     "aside"
-  ).innerHTML = `<div class="d-flex justify-content-center"><div class="circle-border "><div class="circle"><a href="/"><img src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="profile-image" class="img-fluid"></a></div></div></div>
+  ).innerHTML = `<div class="d-flex justify-content-center"><div class="circle-border "><div class="circle"><a href="/">
+  
+  <img src="https://avatars.githubusercontent.com/u/71693187?v=4" alt="profile-image" class="img-fluid">
+  
+  </a></div></div></div>
  <div class="grid-lay">  
   <li class="nav-item">
  
