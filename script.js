@@ -33,25 +33,25 @@ function show() {
         <a data-v-31e7222c="" href="/schedule" class="nav-link text-nowrap" id="navbarDropdown_lg-0" role="button" aria-haspopup="true" aria-expanded="false"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">ცხრილი</a> 
     </li>
     <li data-v-31e7222c="" class="nav-item ">
-        <a data-v-31e7222c="" href="/online-books" class="nav-link text-nowrap" id="navbarDropdown_lg-0" role="button" aria-haspopup="true" aria-expanded="false"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">წიგნები</a> 
+        <a data-v-31e7222c="" href="/online-books" class="nav-link text-nowrap" id="navbarDropdown_lg-0" role="button" aria-haspopup="true" aria-expanded="false"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">წიგნი</a> 
     </li>
 
     <li data-v-31e7222c="" class="nav-item">
-        <a data-v-31e7222c="" href="/exam-schedule" class="nav-link text-nowrap"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">გამოცდები</a> <!---->
+        <a data-v-31e7222c="" href="/exam-schedule" class="nav-link text-nowrap"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">გამოცდა</a> <!---->
     </li>
 
     <li data-v-31e7222c="" class="nav-item">
-        <a data-v-31e7222c="" href="/evaluations" class="nav-link text-nowrap"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">შეფასებები</a> <!---->
+        <a data-v-31e7222c="" href="/evaluations" class="nav-link text-nowrap"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">შეფასება</a> <!---->
 
     </li>
 
     <li data-v-31e7222c="" class="nav-item">
 
-        <a data-v-31e7222c="" href="/my-applications/" class="nav-link text-nowrap"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">განცხადებები</a> <!---->
+        <a data-v-31e7222c="" href="/my-applications/" class="nav-link text-nowrap"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">განცხადება</a> <!---->
     </li>
 
     <li data-v-31e7222c="" class="nav-item">
-        <a data-v-31e7222c="" href="/exam-view/" class="nav-link text-nowrap"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">ნამუშევრები</a>
+        <a data-v-31e7222c="" href="/exam-view/" class="nav-link text-nowrap"><img data-v-31e7222c="" src="https://drive.google.com/uc?export=view&amp;id=1Csxh6szRXpu0ye3fDo0_cWQTyp1xYVeu" alt="" class="img-fluid pre-icon">ნამუშევარი</a>
     
     <!----></li>
 </ul>
@@ -78,20 +78,20 @@ try{
  <div class="grid-lay">  
   <li class="nav-item">
  
-<a href="/conversations/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">მესიჯები${element}</a></li>
+<a href="/conversations/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">მესიჯი${element}</a></li>
   <li class="nav-item">
   
   <a href="/profile/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">პროფილი</a></li>
   <li class="nav-item">
   
-  <a href="/my-program/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">სილაბუსები</a></li>
+  <a href="/my-program/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">სილაფუსი</a></li>
   <li class="nav-item">
   
   <a href="/pay-online/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">გადახდა</a></li><li  class="nav-item">
 
-  <a href="/financial-info/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">ფინანსები</a></li><li  class="nav-item">
+  <a href="/financial-info/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">ბალანსი</a></li><li  class="nav-item">
 
-  <a href="/presentations/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">ნაშრომები</a></li><li  class="nav-item">
+  <a href="/presentations/" class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">ნაშრომი</a></li><li  class="nav-item">
 
   <a href="/registration/" style="display:flex !important; justify-content:center !important;color:white !important;background: #679300 !important;"class="nav-link d-flex align-items-baseline justify-content-start" id="conversations">არჩევა</a></li><li  class="nav-item">
 
