@@ -90,6 +90,7 @@ nav:hover,.d-block.d-lg-block nav:hover {
 .nav-item {
   display: flex !important;
   padding: 10px !important;
+  border-radius: 10px !important;
   float: left !important;
   margin: auto;
 }
@@ -110,6 +111,7 @@ a#conversations {
   margin-top: 10px !important;
   cursor: pointer !important;
   text-align: center !important;
+  border-radius: 10px !important;
 }
 
 img.img-fluid {

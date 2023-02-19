@@ -189,7 +189,10 @@ window.addEventListener("load", (event) => {
   try {
     show();
   } catch { }
+  try{
 
+    document.querySelector("#survey-modal___BV_modal_outer_").remove()
+  }catch{}
   document.querySelector("html").style.opacity = "1";
 });
 
