@@ -76,6 +76,53 @@ nav:hover,.d-block.d-lg-block nav:hover {
   background: #03024e !important;
   box-shadow: 5px 5px 10px #6e006e !important;
 }
+
+/* exam - schedule page */
+.exam-sched section .row:nth-of-type(1) {
+  background: radial-gradient(black, transparent);
+  display: none;
+}
+.exam-sched .row.mb-3 {
+  display: none;
+}
+.active-exam td {
+  background: red !important;
+  color: white !important;
+}
+.exam-schedule nav {
+  display: initial;
+  justify-content: initial !important;
+  margin: initial !important;
+  cursor: initial !important;
+  position: initial !important;
+  top:initial!important;
+  max-height: initial !important;
+  width: initial !important;
+  min-width: initial !important;
+  background: #460144 !important;
+  color: initial;
+  border-radius: initial !important;
+}
+.exam-schedule .nav-tabs a{
+  background: #6e006e !important;
+}
+
+
+/* exam view*/
+.page-leftheader {
+  width: 1000px !important;
+  display: flex !important;
+  height: 100px !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin: auto !important;
+}
+.page-leftheader .btn{
+  min-width: none !important;
+  max-width: none !important;
+  width: 300px !important;
+}
+
 .badge-danger.badge-pill {
   margin-left: 5px !important;
   width: 18px !important;
@@ -282,6 +329,9 @@ span.sender.yellow-msg {
   display: none !important;
 }
 
+
+
+
 @media only  screen and (max-width:1000px) {
   
   aside.col-12.col-sm-3.col-md-2.col-lg-2.position-fixed.sd-bg.px-sm-0.px-md-0.px-lg-1.px-xl-3.d-none.d-sm-block {
@@ -323,3 +373,4 @@ span.sender.yellow-msg {
   }
   
 }
+

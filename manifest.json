@@ -40,9 +40,11 @@
       "js": [
         "script.js"
       ],
+
       "css": [
         "mystyle.css"
       ],
+      
       "run_at": "document_start"
     }
   ]
