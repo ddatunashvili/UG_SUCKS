@@ -325,9 +325,9 @@ span.sender.yellow-msg {
 }
 
 /* disable english lang table */
-.schedule .table tbody tr:nth-of-type(3) {
+/* .schedule .table tbody tr:nth-of-type(3) {
   display: none !important;
-}
+} */
 
 
 
@@ -374,3 +374,9 @@ span.sender.yellow-msg {
   
 }
 
+
+
+
+#survey-modal___BV_modal_outer_{
+  display: none !important;
+}
